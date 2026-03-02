@@ -16,7 +16,7 @@ body {
 .title {
   font-family: 'Pacifico', cursive;
   font-size: 3rem;
-  color: #2e7d32; /* dark light green */
+  color: #2e7d32; 
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #c2185b; /* magenta */
+  color: #c2185b; 
 }
 
 /* Hero Section */
