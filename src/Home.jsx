@@ -3,9 +3,9 @@ import "./Home.css";
 
 function Home() {
   const images = [
-    "/images/smoothie1.jpg",
-    "/images/smoothie2.jpg",
-    "/images/smoothie3.jpg",
+    "/images/bananas.jpg",
+    "/images/cherrries.jpg",
+    "/images/kiwis.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
