@@ -1,0 +1,17 @@
+.builder label:hover {
+  color: #c2185b;
+  cursor: pointer;
+}
+
+.builder input:hover {
+  accent-color: #c2185b;
+}
+
+.builder input:checked {
+  accent-color: #c2185b;
+}
+
+.builder input[type="checkbox"]:hover,
+.builder input[type="radio"]:hover {
+  outline: 2px solid rgba(194, 24, 91, 0.25);
+}

@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 
 function Home() {
-  const images = [
-    "/images/bananas.jpg",
-    "/images/cherrries.jpg",
-    "/images/kiwis.jpg",
-  ];
-
-  const [current, setCurrent] = useState(0);
+   const base = import.meta.env.BASE_URL;
+  
+   const images = [
+  `${base}images/bananas.jpg`,
+  `${base}images/cherries.jpg`,
+  `${base}images/kiwis.jpg`,
+];
+  
+   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,18 +28,10 @@ function Home() {
         <h1 className="title">The Smoothie Place</h1>
       </header>
 
-      {/* Nav Bar */}
-      <nav className="navbar">
-        <div className="nav-item">Home</div>
-        <div className="nav-item">Menu</div>
-        <div className="nav-item">Builder</div>
-        <div className="nav-item">About</div>
-      </nav>
-
       {/* Hero Banner */}
-      <section
+     <section
   className="hero"
-  style={{ backgroundImage: `url("/images/bananas.jpg")` }}
+  style={{ backgroundImage: `url(${images[current]})` }}
 >
   <div className="hero-overlay">
     <button className="cta-button">Make Your Own Smoothie!</button>
@@ -47,6 +41,9 @@ function Home() {
       {/* Intro Section */}
       <section className="intro">
         <h2>Welcome to The Smoothie Place</h2>
+
+      <div className="section-divider"></div>
+
         <p>
           Discover delicious smoothie combinations, explore fresh ingredients,
           and create your own custom blends. Whether you're looking for
