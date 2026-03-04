@@ -35,18 +35,14 @@ function Home() {
       </nav>
 
       {/* Hero Banner */}
-      <section className="hero">
-        <div
-          className="hero-image"
-          style={{ backgroundImage: `url(${images[current]})` }}
-        ></div>
-
-        <div className="hero-overlay">
-          <button className="cta-button">
-            Make Your Own Smoothie!
-          </button>
-        </div>
-      </section>
+      <section
+  className="hero"
+  style={{ backgroundImage: `url("/images/bananas.jpg")` }}
+>
+  <div className="hero-overlay">
+    <button className="cta-button">Make Your Own Smoothie!</button>
+  </div>
+</section>
 
       {/* Intro Section */}
       <section className="intro">
