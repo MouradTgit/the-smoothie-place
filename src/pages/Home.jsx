@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
    const base = import.meta.env.BASE_URL;
@@ -34,8 +35,9 @@ function Home() {
   style={{ backgroundImage: `url(${images[current]})` }}
 >
   <div className="hero-overlay">
-    <button className="cta-button">Make Your Own Smoothie!</button>
-  </div>
+    <Link to="/builder" className="cta-button">
+      Make Your Own Smoothie!
+    </Link>  </div>
 </section>
 
       {/* Intro Section */}
