@@ -10,7 +10,7 @@ import Created from "./pages/Created";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
