@@ -9,6 +9,7 @@ function Home() {
   `${base}images/bananas.jpg`,
   `${base}images/cherries.jpg`,
   `${base}images/kiwis.jpg`,
+  `${base}images/orange.jpg`,
 ];
   
    const [current, setCurrent] = useState(0);
